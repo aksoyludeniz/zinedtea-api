@@ -16,3 +16,15 @@ Zined Tea
 Boost energy and drive to enhance the quality of health.
 
 We are currently selling three teas that increase longevity for the human body. Teas are infused with coding attributes which decrease debugging, boost immunity, and reduce stress.    
+
+
+Tea Descriptions:
+
+1.) Super Interpolation:  Sarsaparilla, Stinging Netle & Red Clover.
+20 count $10
+
+2.) mineralScript: Burdock Root, Elderberry, Linden Leaf & Key Lime.
+20 count $10
+
+3.) Bootcamp Groove:  Damiana, Ginger, Sensitiva & Yohimbe
+20 count $10
