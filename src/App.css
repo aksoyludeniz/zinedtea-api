@@ -1,28 +1,21 @@
-.App {
-  text-align: center;
+
+.mdl-layout__header-row {
+    background-color: #ff5800;
+  }
+
+
+.material-icons {
+  image: url("https://user-images.githubusercontent.com/33230300/39197069-a16976dc-47b1-11e8-9352-62205d14d6a4.png")
+
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+  body {
+      background-image: url("https://d39ziaow49lrgk.cloudfront.net/wp-content/uploads/2015/04/dandelion-tea.jpg");
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
+      height: 100%;
+      width: auto;
 
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
