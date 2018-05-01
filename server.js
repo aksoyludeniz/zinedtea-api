@@ -10,9 +10,9 @@ const PORT = process.env.PORT || 3001;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 // Serve up static assets
-if (process.env.Node_ENV === "production") {
-  app.use(express.static("client/build"));
-}
+// if (process.env.Node_ENV === "production") {
+//   app.use(express.static("client/build"));
+// }
 // Add routes, both API and view
 app.use(routes);
 
@@ -22,13 +22,8 @@ mongoose.Promise = global.Promise;
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/zinedtea")
 
-const io = require("socket.io")(server);
 
-  io.on("connection", (client) => {
-    client.on("article_saved", article => {
-      io.emit('article_saved', article);
-    })
-  });
+
 
 // Start the API server
 server.listen(PORT, function() {
