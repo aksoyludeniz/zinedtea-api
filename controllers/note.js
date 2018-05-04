@@ -2,33 +2,33 @@ const db = require("../models");
 
 module.exports = {
   findAll: (req, res) => {
-    db.User
+    db.Note
       .find(req.query)
       .sort({ date: -1 })
-      .then(users => res.json(users))
+      .then(notes => res.json(notes))
       .catch(err => res.status(422).json(err));
   },
   findById: (req, res) => {
-    db.User
+    db.Note
       .findById(req.params.id)
-      .then(user => res.json(user))
+      .then(note => res.json(note))
       .catch(err => res.status(422).json(err));
   },
   create: (req, res) => {
-    const user = {
-      name: req.body.name,
-      adress: req.body.adress,     email: req.body.email
+    const note = {
+      user: req.body.user,
+      comment: req.body.comment
     };
-    db.User
-      .create(user)
-      .then(user => res.json(user))
+    db.Note
+      .create(note)
+      .then(note => res.json(note))
       .catch(err => res.status(422).json(err));
   },
   delete: (req, res) => {
-    db.User
+    db.Note
       .findById({ _id: req.params.id })
-      .then(user => user.remove())
-      .then(user => res.json(user))
+      .then(note => note.remove())
+      .then(note => res.json(note))
       .catch(err => res.status(422).json(err));
   }
 };

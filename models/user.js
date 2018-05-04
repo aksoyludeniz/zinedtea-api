@@ -7,10 +7,10 @@ const userSchema = new Schema({
   adress: { type: String, required: true
   },
   email: { type: String, required: true
-  },
-  comments:  {type: String}
+  }
+
 });
 
 const User = mongoose.model("user", userSchema);
 
-module.exports = Tea;
+module.exports = User;
