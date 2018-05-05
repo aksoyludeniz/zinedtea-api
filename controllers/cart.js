@@ -17,7 +17,9 @@ module.exports = {
   create: (req, res) => {
     const cart = {
       user: req.body.user,
-      cart: req.body.cart
+      item: req.body.item,
+      quantity: req.body.quantity,
+      price: req.body.price
     };
     db.Cart
       .create(note)

@@ -15,7 +15,9 @@ const cartsSeed = [
   {
    "id": 1,
    "user": "",
-   "cart": ""
+   "item": "",
+   "quantity": "",
+   "price":""
   }
 
 ];
