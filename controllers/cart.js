@@ -5,32 +5,40 @@ module.exports = {
     db.Cart
       .find(req.query)
       .sort({ date: -1 })
-      .then(notes => res.json(notes))
+      .then(carts => res.json(carts))
       .catch(err => res.status(422).json(err));
   },
   findById: (req, res) => {
     db.Cart
       .findById(req.params.id)
-      .then(note => res.json(note))
+      .then(cart => res.json(cart))
       .catch(err => res.status(422).json(err));
   },
   create: (req, res) => {
     const cart = {
-      user: req.body.user,
-      item: req.body.item,
+      name: req.body.name,
       quantity: req.body.quantity,
       price: req.body.price
     };
     db.Cart
-      .create(note)
-      .then(note => res.json(note))
+      .create(cart)
+      .then(cart => res.json(cart))
       .catch(err => res.status(422).json(err));
   },
+  update: (req,res) => {
+  db.Cart
+    .findOneAndUpdate({ _id: req.params.id}, {items:req.body.items}, function(err,data) {
+      if (err) return res.status(422).json(err);
+      res.json(data)
+
+    });
+   },
+
   delete: (req, res) => {
     db.Cart
       .findById({ _id: req.params.id })
-      .then(note => note.remove())
-      .then(note => res.json(note))
+      .then(cart => cart.remove())
+      .then(cart => res.json(cart))
       .catch(err => res.status(422).json(err));
   }
 };

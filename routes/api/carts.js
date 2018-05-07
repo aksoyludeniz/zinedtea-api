@@ -6,6 +6,7 @@ router
   .route("/")
   .get(cart.findAll)
   .post(cart.create)
+  .put(cart.update)
 
 router
   .route("/:id")

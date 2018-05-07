@@ -11,12 +11,23 @@ mongoose.connect(
   }
 );
 
-const cartsSeed = [
+const cartSeed = [
   {
    "id": 1,
-   "user": "",
-   "item": "",
-   "quantity": "",
+   "name": "",
+   "quantity":"",
+   "price":""
+ },
+  {
+   "id": 2,
+   "name": "",
+   "quantity":"",
+   "price":""
+ },
+  {
+   "id": 3,
+   "name": "",
+   "quantity":"",
    "price":""
   }
 

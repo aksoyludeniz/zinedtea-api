@@ -8,7 +8,10 @@ const teaSchema = new Schema({
   },
   image: { data: Buffer, contentType: String
   },
-  price:  {type: Number}
+  price: { type: Number
+  },
+  quantity: { type: Number
+  }
 });
 
 const Tea = mongoose.model("Tea", teaSchema);
