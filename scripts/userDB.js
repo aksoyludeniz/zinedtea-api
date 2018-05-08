@@ -16,7 +16,7 @@ mongoose.connect(
 "name": "",
 "adress": "",
 "email": "",
-"comments": ""
+"password": ""
 
 }
 ];

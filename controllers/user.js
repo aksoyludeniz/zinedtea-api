@@ -17,7 +17,9 @@ module.exports = {
   create: (req, res) => {
     const user = {
       name: req.body.name,
-      adress: req.body.adress,     email: req.body.email
+      adress: req.body.adress,
+      email: req.body.email,
+      password: req.body.password
     };
     db.User
       .create(user)

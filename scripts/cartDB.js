@@ -17,20 +17,7 @@ const cartSeed = [
    "name": "",
    "quantity":"",
    "price":""
- },
-  {
-   "id": 2,
-   "name": "",
-   "quantity":"",
-   "price":""
- },
-  {
-   "id": 3,
-   "name": "",
-   "quantity":"",
-   "price":""
-  }
-
+ }
 ];
 
 
