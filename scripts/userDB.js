@@ -13,9 +13,7 @@ mongoose.connect(
 
 {
 "id": 1,
-"name": "",
-"adress": "",
-"email": "",
+"username": "",
 "password": ""
 
 }
